@@ -96,7 +96,7 @@ namespace Pizzeria
 
         private void Eliminar(int id)
         {
-         
+
             var resultado = _productos.EliminarProducto(id);
 
             if (resultado == true)
@@ -114,5 +114,7 @@ namespace Pizzeria
             DeshabilitarHabilitarBotones(true);
             Eliminar(0);
         }
+
+
     }
 }

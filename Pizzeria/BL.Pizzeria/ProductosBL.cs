@@ -86,6 +86,11 @@ namespace BL.Pizzeria
                 resultado.Mensaje = "El precio debe ser ser mayor que cero";
                 resultado.Exitoso = false;
 
+             if (producto. TipoId == 0)
+                {
+                    resultado.Mensaje = "Selecccione un Tipo";
+                    resultado.Exitoso = false;
+                }
             }
             return resultado;
         }
@@ -98,6 +103,9 @@ namespace BL.Pizzeria
         public string Tamano { get; set; }
         public bool Activo { get; set; }
         public int Existencia { get; internal set; }
+        public int TipoId { get; set; }
+        public Tipo Tipo { get; set;} 
+        public byte [] Foto { get; set;}
         public string Descripcion { get; internal set; }
     }
 

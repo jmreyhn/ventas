@@ -23,8 +23,8 @@ namespace BL.Pizzeria
         }
         public BindingList<Tipo> ObtenerTipos()
         {
-            _contexto.Tipos.Load();
-            ListaTipos = _contexto.Tipos.Local.ToBindingList();
+            //_contexto.Tipos.Load();
+            //ListaTipos = _contexto.Tipos.Local.ToBindingList();
             return ListaTipos;
         }
     }
@@ -32,6 +32,6 @@ namespace BL.Pizzeria
     public class Tipo
     {
         public int Id { get; set; }
-        public String Descripcion { get; set; }
+        public String Descripción { get; set; }
     }
 
